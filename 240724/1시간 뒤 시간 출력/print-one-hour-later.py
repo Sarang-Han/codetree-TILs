@@ -1,5 +1,5 @@
-time = list(map(int, input().split(":")))
-time[0] += 1
-time[0] = str(time[0])
-time[1] = str(time[1])
-print(time[0]+":"+time[1])
+time = input().split(":")
+h = int(time[0])
+m = int(time[1])
+
+print(f"{h+1}:{m}")
