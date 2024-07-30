@@ -1,7 +1,7 @@
 n = int(input())
 cnt1 = cnt2 = cnt3 = 0
 
-for i in range(n):
+for i in range(1, n):
     if i % 12 == 0:
         cnt3 += 1
     else:
@@ -10,4 +10,4 @@ for i in range(n):
         elif i % 2 == 0:
             cnt1 += 1
 
-print(cnt1,cnt2,cnt3-1, end =" ")
+print(cnt1,cnt2,cnt3, end =" ")
