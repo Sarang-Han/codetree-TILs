@@ -6,7 +6,4 @@ for i in range(3):
     if symp == "Y" and temp >= 37 :
         case += 1
 
-if case >= 2 :
-    print("E")
-else :
-    print("N")
+print("E" if case >= 2 else "N")
