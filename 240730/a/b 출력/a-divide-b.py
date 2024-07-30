@@ -13,11 +13,11 @@ else:
         decimal += str(digit)
         remainder = remainder % b
 
+    # 반올림을 위해 21번째 자리를 계산
     remainder *= 10
     next_digit = remainder // b
 
     if next_digit >= 5:
-        # 소수 부분을 정수로 변환하여 반올림하고, 다시 문자열로 변환
-        decimal = str(int(decimal) + 1)
+        decimal = str(int(decimal) + 1).zfill(20)
 
-    print(f"{integer}.{decimal}")
+    print(f"{integer}.{decimal[:20]}")
