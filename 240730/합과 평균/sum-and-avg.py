@@ -1,3 +1,3 @@
 a, b = map(int, input().split())
 
-print(a+b, (a+b)/2)
+print(f"{a + b} {(a + b)/2 :.1f}")
