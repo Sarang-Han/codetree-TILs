@@ -5,8 +5,8 @@ if a > c :
     print("A")
 elif a == c :
     if b > d :
-        print("B")
-    else :
         print("A")
-else:
+    else:
+        print("B")
+else :
     print("B")
