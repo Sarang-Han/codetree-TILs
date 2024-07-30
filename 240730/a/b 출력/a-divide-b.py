@@ -18,6 +18,6 @@ else:
     next_digit = remainder // b
 
     if next_digit >= 5:
-        decimal = str(int(decimal) + 1).zfill(20)
+        decimal = str(int(decimal) - 1).zfill(20)
 
     print(f"{integer}.{decimal[:20]}")
