@@ -1,22 +1,21 @@
 a, b = map(int, input().split())
 
-if a % b == 0:
-    print(f"{a // b}.00000000000000000000")
-else:
-    integer = a // b
-    remainder = a % b
-    decimal = ""
+integer_part = a // b
+decimal_part = ""
+remainder = a % b
 
-    for _ in range(21):
-        remainder *= 10
-        digit = remainder // b
-        decimal += str(digit)
-        remainder = remainder % b
-
+for _ in range(20):
     remainder *= 10
-    next_digit = remainder // b
+    digit = remainder // b
+    decimal_part += str(digit)
+    remainder %= b
 
-    if next_digit >= 5:
-        decimal = str(int(decimal) + 1).zfill(20)
+# 반올림 처리
+if remainder >= b // 2:
+    decimal_part = str(int(decimal_part) + 1)
 
-    print(f"{integer}.{decimal[:20]}")
+# 소수점 이하 자릿수 맞추기
+if len(decimal_part) < 20:
+    decimal_part += '0' * (20 - len(decimal_part))
+
+print(f"{integer_part}.{decimal_part}")
