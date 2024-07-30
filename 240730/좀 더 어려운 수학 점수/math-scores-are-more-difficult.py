@@ -3,7 +3,7 @@ c, d = map(int, input().split())
 
 if a > c :
     print("A")
-elif:
+elif a == c :
     if b > d :
         print("B")
     else :
