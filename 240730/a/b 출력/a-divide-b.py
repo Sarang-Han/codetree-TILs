@@ -4,7 +4,7 @@ integer_part = a // b
 decimal_part = ""
 remainder = a % b
 
-for _ in range(20):
+for _ in range(21):
     remainder *= 10
     digit = remainder // b
     decimal_part += str(digit)
