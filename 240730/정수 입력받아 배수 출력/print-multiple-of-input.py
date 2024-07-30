@@ -1,4 +1,4 @@
 n = int(input())
 
-for i in range(n, n*5 + 1 ,n):
+for i in range(n, 6*n, n):
     print(i, end = " ")
