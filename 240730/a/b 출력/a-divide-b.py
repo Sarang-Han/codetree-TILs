@@ -7,13 +7,12 @@ else:
     remainder = a % b
     decimal = ""
 
-    for _ in range(20):
+    for _ in range(21):
         remainder *= 10
         digit = remainder // b
         decimal += str(digit)
         remainder = remainder % b
 
-    # 반올림을 위해 21번째 자리를 계산
     remainder *= 10
     next_digit = remainder // b
 
