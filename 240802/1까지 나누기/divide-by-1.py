@@ -1,9 +1,10 @@
 n = int(input())
 cnt = 0
-
-for i in range(1, 5000):
-    if n < 1:
-        break
+i = 1
+while True:
     n /= i
     cnt += 1
+    i += 1
+    if n < 1:
+        break
 print(cnt)
