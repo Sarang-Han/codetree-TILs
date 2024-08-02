@@ -3,7 +3,7 @@ sum = 0
 
 while True:
     n = int(input())
-    if n > 29 :
+    if n < 20 or n > 29 :
         break
     sum += n
     cnt += 1
