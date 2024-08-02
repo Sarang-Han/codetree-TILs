@@ -1,9 +1,9 @@
 n = int(input())
-cnt = 1
+cnt = 0
 
-while True:
-    n /= cnt
+for i in range(1, 5000):
+    n /= i
     cnt += 1
-    if n <= 1:
+    if n < 1:
         break
-print(cnt-1)
+print(cnt)
