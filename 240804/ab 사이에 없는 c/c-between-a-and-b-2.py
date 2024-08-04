@@ -1,9 +1,9 @@
 a, b, c = map(int, input().split())
-is_exist = False
+has_No = False
 
 for i in range(a, b+1):
     if i % c == 0:
-        is_exist = True
+        has_No = True
         break
 
-print("NO" if is_exist else "YES")
+print("NO" if has_No else "YES")
